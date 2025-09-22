@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Čitak - Web projekti</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000; /* crna pozadina */
+            color: #fff; /* bijeli tekst */
+        }
+
+        header {
+            background: #000; /* crna */
+            color: #FFD700; /* zlatna */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #FFD700;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #FFD700; /* zlatna */
+        }
+
+        header p {
+            margin: 5px 0 0;
+            color: #fff; /* bijelo */
+            font-style: italic;
+        }
+
+        nav {
+            background: #111; /* tamna crna */
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #FFD700;
+        }
+
+        nav a {
+            color: #FFD700; /* zlatna za linkove */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .post {
+            background: #111; /* tamno siva kartica */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2); /* zlatni sjaj */
+            margin-bottom: 30px;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .post h2 {
+            color: #FFD700; /* zlatni naslovi objava */
+            margin-top: 0;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: #ccc; /* svijetlo siva */
+            margin-bottom: 15px;
+        }
+
+        .code-box {
+            background: #1a1a1a; /* tamna crna */
+            color: #FFD700; /* zlatni tekst unutar koda */
+            padding: 15px;
+            border-radius: 8px;
+            font-family: Consolas, monospace;
+            overflow-x: auto;
+        }
+
+        .important {
+            background: #332b00; /* tamno zlatna */
+            border-left: 6px solid #FFD700;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 6px;
+            color: #FFD700; /* zlatna slova */
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #000;
+            color: #FFD700; /* zlatni tekst */
+            margin-top: 40px;
+            border-top: 1px solid #FFD700;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dino Čitak</h1>
+        <p>Web projekti 2.E</p>
+    </header>
+
+    <nav>
+        <a href="#">Početna</a>
+        <a href="#">Lekcije</a>
+        <a href="#">O meni</a>
+    </nav>
+
+    <div class="container">
+        <!-- PRVA OBJAVA -->
+        <div class="post">
+            <h2>Kako dodati CSS u HTML</h2>
+            <p class="meta">📅 22. rujan 2025. | ⏱ 90 minuta</p>
+            <p>U ovoj lekciji naučili smo tri načina kako povezati CSS sa HTML-om:</p>
+            <ul>
+                <li><b>Inline CSS</b> – direktno unutar HTML elementa</li>
+                <li><b>Internal CSS</b> – pomoću &lt;style&gt; taga u &lt;head&gt;</li>
+                <li><b>External CSS</b> – povezivanje posebne .css datoteke</li>
+            </ul>
+
+            <div class="code-box">
+&lt;!-- Inline CSS --&gt;<br>
+&lt;p style="color:red;"&gt;Ovo je crveni tekst&lt;/p&gt;<br><br>
+
+&lt;!-- Internal CSS --&gt;<br>
+&lt;style&gt;<br>
+&nbsp;&nbsp;p { color: blue; }<br>
+&lt;/style&gt;<br><br>
+
+&lt;!-- External CSS --&gt;<br>
+&lt;link rel="stylesheet" href="style.css"&gt;
+            </div>
+
+            <div class="important">
+                <b>Važno:</b> Preporučuje se koristiti <b>external CSS</b> jer omogućava da odvojimo dizajn od sadržaja i lakše uređujemo stranicu.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Dino Čitak - Web projekti
+    </footer>
+
+</body>
+</html>
